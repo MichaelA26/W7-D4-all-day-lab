@@ -30,15 +30,18 @@ export default {
       this.beers = beers
     })
 
-      // beersWithFavouritedSetFalse
-
     eventBus.$on('beer-selected', (beer) => {
       this.selectedBeer = beer
     })
 
     eventBus.$on('beer-favourited', (beer) => {
       console.log("yo")
-      beer.favourited = true
+      if (beer.favourited === false) {
+        beer.favourited = true
+      }
+      else {
+        beer.favourited = false
+      }
     })
   },
 
