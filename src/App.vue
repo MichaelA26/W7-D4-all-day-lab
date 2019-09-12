@@ -57,6 +57,7 @@ export default {
 
 h1 {
   text-align: center;
+  text-shadow: 1px 1px 1px black;
 }
 
 ul {
