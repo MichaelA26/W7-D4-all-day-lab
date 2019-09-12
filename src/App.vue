@@ -23,10 +23,22 @@ export default {
   mounted(){
     fetch('https://api.punkapi.com/v2/beers')
     .then(res => res.json())
-    .then(beers => this.beers = beers)
+    .then(beers => {
+      beers.forEach(beer => {
+        beer.favourited = false
+      })
+      this.beers = beers
+    })
+
+      // beersWithFavouritedSetFalse
 
     eventBus.$on('beer-selected', (beer) => {
       this.selectedBeer = beer
+    })
+
+    eventBus.$on('beer-favourited', (beer) => {
+      console.log("yo")
+      beer.favourited = true
     })
   },
 
@@ -39,5 +51,22 @@ export default {
 </script>
 
 <style>
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  display: inline;
+  text-align: center;
+}
+
+li {
+  display: inline;
+}
+
+button {
+  display: inline;
+}
 
 </style>
