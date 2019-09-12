@@ -1,6 +1,6 @@
 <template lang="html">
   <div>
-    <li>Lads</li>
+    <li>{{beer.name}}</li>
   </div>
 </template>
 

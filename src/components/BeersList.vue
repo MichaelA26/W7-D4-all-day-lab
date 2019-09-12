@@ -1,5 +1,9 @@
 <template lang="html">
-<p>helloooooo</p>
+  <div>
+    <ul>
+      <list-component v-for="(beer, index) in beers" :beer="beer" :key="index"></list-component>
+    </ul>
+  </div>
 </template>
 
 <script>
