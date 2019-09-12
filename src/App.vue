@@ -55,18 +55,37 @@ export default {
 
 <style>
 
+body {
+  color: yellow;
+  background-color: black;
+  background-image: url(../public/beerBoys_S.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+p {
+  background-color: black;
+  color: yellow;
+}
+
 h1 {
   text-align: center;
   text-shadow: 1px 1px 1px black;
+  color: yellow;
+  background-color: black;
 }
 
 ul {
+  color: yellow;
+  background-color: black;
   display: inline;
   text-align: center;
 }
 
 li {
   display: inline;
+  color: yellow;
+  background-color: black;
 }
 
 button {

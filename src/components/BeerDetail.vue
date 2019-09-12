@@ -25,9 +25,8 @@ export default {
 
 .image-container{
   display: flex;
-  align-content: center;
-  align-self: center;
-}
+  justify-content: center;
+ }
 
 p {
   text-align: center;
